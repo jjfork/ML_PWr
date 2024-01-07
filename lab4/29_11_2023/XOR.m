@@ -1,3 +1,7 @@
+clear all 
+close all
+clc
+
 x1 = [0 1 0 1];
 x2 = [0 0 1 1];
 
@@ -22,7 +26,6 @@ network.trainParam.goal = 0;
 
 network = train(network, X, Y);
 
-% Add disturbance in Y_all and save to new Y_mod
 y_nn = sim(network, X);
 
 figure(2)
