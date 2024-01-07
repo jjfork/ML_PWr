@@ -24,6 +24,6 @@ for hiddenSize = [10, 20, 30, 40, 50]
     figure;
     plot(ye,'r');grid;hold;plot(yt,'b');legend('Original Data','Reconstructed Data');
     title(['Hidden Layer Size: ', num2str(hiddenSize), ', Number of Epochs: ', num2str(maxEpochs), ' Recontruction Error: ', num2str(reconstructionError)]);
-
+    subtitle('EncoderFunction: logsig, DecoderFunction: satlin')
   end
 end
